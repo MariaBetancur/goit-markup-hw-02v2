@@ -1,32 +1,44 @@
+:root {
+  --brand-color: #2196f3;
+  --brand-font-size: "Roboto";
+}
 .body {
-  font-family: "Roboto", sans-serif;
+  font-family: var(-brand-font-size), "sans-serif";
   color: #757575;
+  font-size: 14px;
+  font-weight: 400;
 }
 a:hover {
-  color: #2196f3;
+  color: var(--brand-color);
 }
-.titulo-web-studio {
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+.title-web-studio {
   font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
-  line-height: 31px;
+  line-height: 1.2;
   text-align: right;
   letter-spacing: 0.03em;
-  color: #2196f3;
+  color: var(--brand-color);
 }
 
 /* pagina estudio */
-.boton-soluciones {
-  background: #2196f3;
+.button-solutions {
+  background: var(--brand-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4p;
+  border-radius: 4px;
   cursor: pointer;
-  font-family: "Roboto";
+  font-family: var(-brand-font-size), "sans-serif";
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
-  line-height: 30px;
+  line-height: 1.8;
   display: flex;
   align-items: center;
   text-align: center;
@@ -34,68 +46,66 @@ a:hover {
   color: #ffffff;
   flex: none;
 }
-.boton-soluciones:hover {
-  background-color: #757575;
+.button-solutions:hover {
+  background-color: var(--brand-color);
 }
 
-.link-menu-estudio {
-  font-family: "Roboto", sans-serif;
+.link-menu-studio {
+  font-family: var(-brand-font-size), "sans-serif";
   font-style: normal;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
+  line-height: 1.1;
   letter-spacing: 0.02em;
-  color: #212121;
+  color: #757575;
 }
 
-.soluciones {
+.solutions {
   background: #2f303a;
-  font-family: "Roboto";
+  font-family: var(-brand-font-size), "sans-serif";
   font-style: normal;
   font-size: 44px;
-  line-height: 60px;
+  line-height: 1.3;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
 }
 
-.a-que-nos-dedicamos {
-  font-family: "Roboto";
+.what-are-we-dedicated {
+  font-family: var(-brand-font-size), "sans-serif";
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
-  line-height: 42px;
+  line-height: 1.1;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
 }
-.n-e {
-  font-family: "Roboto";
+.title-h2 {
+  font-size: 36px;
+}
+.our-team {
+  font-family: var(-brand-font-size), "sans-serif";
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
-  line-height: 42px;
+  line-height: 1.1;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
   background: #f5f4fa;
 }
-.direccion {
-  font-family: "Roboto";
+.address {
+  font-family: var(-brand-font-size), "sans-serif";
   font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
+  line-height: 1.7;
   letter-spacing: 0.03em;
   color: #ffffff;
 }
-.datos-contacto {
-  font-family: "Roboto";
+.contact-information {
+  font-family: var(-brand-font-size), "sans-serif";
   font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
+  line-height: 1.7;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
@@ -105,12 +115,12 @@ a:hover {
 
 /* pagina portafolio */
 
-.boton-portafolio {
-  font-family: "Roboto";
+.button-portfolio {
+  font-family: var(-brand-font-size), "sans-serif";
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  line-height: 26px;
+  line-height: 1.6;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
@@ -118,26 +128,24 @@ a:hover {
   border-radius: 4px;
   border-color: #f5f4fa;
 }
-.boton-portafolio:hover {
+.button-portfolio:hover {
   background-color: #2196f3;
 }
 
 .link-menu {
-  font-family: "Roboto", sans-serif;
+  font-family: var(-brand-font-size), "sans-serif";
   font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
+  line-height: 1.1;
   letter-spacing: 0.02em;
 
   color: #212121;
 }
 h1 {
-  font-family: "Roboto";
+  font-family: var(-brand-font-size), "sans-serif";
   font-style: normal;
   font-weight: 900;
   font-size: 44px;
-  line-height: 60px;
+  line-height: 1.3;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -145,30 +153,29 @@ h1 {
 }
 
 h3 {
-  font-family: "Roboto";
+  font-family: var(-brand-font-size), "sans-serif";
   font-style: normal;
+  font-size: 16px;
   font-weight: 700;
-  font-size: 14px;
-  line-height: 16px;
+  line-height: 1.1;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #212121;
 }
 h2 {
-  font-family: "Roboto";
+  font-family: var(-brand-font-size), "sans-serif";
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
-  line-height: 36px;
+  line-height: 2;
   letter-spacing: 0.06em;
   color: #212121;
 }
 p {
-  font-family: "Roboto";
+  font-family: var(-brand-font-size), "sans-serif";
   font-style: normal;
-  font-weight: 400;
   font-size: 16px;
-  line-height: 30px;
+  line-height: 1.8;
   letter-spacing: 0.03em;
   color: #757575;
 }
